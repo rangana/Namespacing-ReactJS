@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Namespacing Approach</title>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <script src="bower_components/babel/browser.js"></script>
+    <script>
+        window.com = {
+            pearson: {
+                common: {},
+                utils: {}
+            }
+        }
+    </script>
+    <script type="text/babel" src="scripts/common-modules/common-label.js"></script>
+    <script type="text/babel" src="scripts/common-modules/common-textbox.js"></script>
+    <script type="text/babel" src="scripts/assignment-player/player-component.js"></script>
+</head>
+<body>
+<div style="width: 100%;height: 50px; background-color: maroon; color: gold; text-align: center">
+    <h1> Top area</h1>
+</div>
+
+<div id="assignment-player" style="width: 600px;height: 400px; margin: 0 auto; border: 1px solid maroon; padding: 5px">
+
+</div>
+
+<div style="width: 100%;height: 50px; background-color: maroon; color: gold; text-align: center">
+    <h1>Bottom area</h1>
+</div>
+
+</body>
+</html>
